@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./form.js"></script>
+</head>
+<body>
+    <h2 class="header">Student Enrollment Form</h2>
+    <div class="container1">
+
+        <form id="registrationForm">
+        <b>
+        <label for="name">Name:</label>                                                              
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"  required><br><br>
+
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" required><br><br>
+
+        <label for="image" >Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required><br><br>
+
+        <label for="gender">Gender:</label><br><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>&nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>&nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <label for="skills">Skills:</label><br><br>
+        <input type="checkbox" id="java" name="skills" value="Java">
+        <label for="java">Java</label>&nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="css">HTML</label>&nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+        <label for="javascript">JavaScript</label><br><br>
+    </b>
+
+       
+
+        <input type="submit" value="Enroll Student" onclick="addStudent()"> &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="reset" value="Clear">
+        </form>
+    </div>
+
+    <div class="container2">
+        <h2>Enrolled Students</h2>
+        <table id="table">
+            <tr>
+            <th style="width:50%">Description</th>
+            <th style="width:25%">Image</th>
+            <th style="width:25%">Actions</th>
+        </tr>
+        </table>
+    </div>
+</body>
+</html>
